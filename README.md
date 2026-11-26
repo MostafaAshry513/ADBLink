@@ -1,4 +1,4 @@
-# adb-otg-termux
+# ADBLink
 
 Use the real `adb` from Termux to control a second Android phone over a USB OTG cable, from a phone
 that is not rooted and has no computer nearby.
@@ -85,4 +85,3 @@ passed on re-run.
   the BSD 3-Clause license (`adblib/LICENSE`). Details and the one change made are in
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - Everything else is MIT licensed, see [LICENSE](LICENSE).
-
