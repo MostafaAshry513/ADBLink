@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/icon.svg" alt="ADBLink icon" width="128" height="128">
+</p>
+
 # ADBLink
 
 [![CI](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml/badge.svg)](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml)
