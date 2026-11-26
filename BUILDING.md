@@ -60,7 +60,7 @@ suspecting your changes.
   your file manager when asked).
 
 A prebuilt, hardware-tested APK is attached to the
-[Releases](https://github.com/MostafaAshry513/adb-otg-termux/releases) page,
+[Releases](https://github.com/MostafaAshry513/ADBLink/releases) page,
 with its SHA-256 in the release notes.
 
 ## Project layout
