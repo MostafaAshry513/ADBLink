@@ -2,6 +2,12 @@
 
 [![CI](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml/badge.svg)](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml)
 
+> **Kotlin app.** The app code (`cli` and the bundled `adblib`) is a Kotlin port of the earlier Java
+> version, with the same behavior: USB relay to `127.0.0.1:6000`, same framing, same logging. The port
+> was AI-assisted. The 13 unit tests (still written in Java, run against the Kotlin code) are run by
+> CI. The Kotlin version has **not** been tested on real phones or USB hardware yet; only the earlier
+> Java version was.
+
 Use the real `adb` from Termux to control a second Android phone over a USB OTG cable, from a phone
 that is not rooted and has no computer nearby.
 
