@@ -76,7 +76,7 @@ class CliService : Service() {
 
     private fun goForeground() {
         if (Build.VERSION.SDK_INT >= 26) {
-            val ch = NotificationChannel("bridge", "ADB-OTG Bridge", NotificationManager.IMPORTANCE_LOW)
+            val ch = NotificationChannel("bridge", "ADBLink", NotificationManager.IMPORTANCE_LOW)
             (getSystemService(NOTIFICATION_SERVICE) as NotificationManager).createNotificationChannel(ch)
         }
         val b = if (Build.VERSION.SDK_INT >= 26) Notification.Builder(this, "bridge")
@@ -86,7 +86,7 @@ class CliService : Service() {
             this, 0, open,
             if (Build.VERSION.SDK_INT >= 23) PendingIntent.FLAG_IMMUTABLE else 0
         )
-        val n = b.setContentTitle("ADB-OTG Bridge running")
+        val n = b.setContentTitle("ADBLink running")
             .setContentText("In Termux: adb connect 127.0.0.1:$PORT")
             .setSmallIcon(android.R.drawable.stat_sys_data_bluetooth)
             .setContentIntent(pi).setOngoing(true).build()
