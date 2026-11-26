@@ -1,5 +1,7 @@
 # ADBLink
 
+[![CI](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml/badge.svg)](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml)
+
 Use the real `adb` from Termux to control a second Android phone over a USB OTG cable, from a phone
 that is not rooted and has no computer nearby.
 
@@ -62,7 +64,8 @@ chmod +x gradlew   # the web upload did not keep the executable bit
 The APK ends up in `cli/build/outputs/apk/debug/`. The unit tests run a fake adb target over a local
 socket (no hardware). At the time of publishing they pass; one timing-sensitive test
 (`garbageBytesCloseSessionWithHexEvidence`) failed once on a slow single-core build machine and
-passed on re-run.
+passed on re-run. CI re-runs the test suite once if it fails, so a flaky
+failure shows up as a warning on the run; a real failure still fails the build.
 
 ## Honest notes
 

@@ -193,11 +193,13 @@ public class BridgeServer {
             if (!alive) return;
             alive = false;
             link.close();
-            try { client.close(); } catch (IOException ignored) {}
+            // Log BEFORE closing the client socket: anything that watches for the socket to close
+            // (including the unit tests) must already be able to see why the relay ended.
             if (reason != null && !reported) {
                 reported = true;
                 events.log("relay ended: " + reason);
             }
+            try { client.close(); } catch (IOException ignored) {}
             events.sessionState(false, null);
             if (active == this) active = null;
         }
