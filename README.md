@@ -52,6 +52,7 @@ Needs JDK 17 and the Android SDK (platform 34). Then:
 
 ```
 echo "sdk.dir=/path/to/android/sdk" > local.properties
+chmod +x gradlew   # the web upload did not keep the executable bit
 ./gradlew :cli:testDebugUnitTest :cli:assembleDebug
 ```
 
