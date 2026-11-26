@@ -1,4 +1,10 @@
-# adb-otg-termux
+# adb-otg-termux (Kotlin rewrite)
+
+> **This is the `kotlin-rewrite` branch.** The app code here (`cli` and the bundled `adblib`) is a
+> Kotlin port of the Java version on `main`, with the same behavior: USB relay to `127.0.0.1:6000`,
+> same framing, same logging. `main` stays Java. The port was AI-assisted. It builds, and the 13
+> existing unit tests (kept in Java, run against the Kotlin code) pass. It has **not** been tested on
+> real phones or USB hardware; only the Java version on `main` has been.
 
 Use the real `adb` from Termux to control a second Android phone over a USB OTG cable, from a phone
 that is not rooted and has no computer nearby.
