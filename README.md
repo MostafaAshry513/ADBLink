@@ -1,10 +1,12 @@
-# adb-otg-termux (Kotlin rewrite)
+# ADBLink
 
-> **This is the `kotlin-rewrite` branch.** The app code here (`cli` and the bundled `adblib`) is a
-> Kotlin port of the Java version on `main`, with the same behavior: USB relay to `127.0.0.1:6000`,
-> same framing, same logging. `main` stays Java. The port was AI-assisted. It builds, and the 13
-> existing unit tests (kept in Java, run against the Kotlin code) pass. It has **not** been tested on
-> real phones or USB hardware; only the Java version on `main` has been.
+[![CI](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml/badge.svg)](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml)
+
+> **Kotlin app.** The app code (`cli` and the bundled `adblib`) is a Kotlin port of the earlier Java
+> version, with the same behavior: USB relay to `127.0.0.1:6000`, same framing, same logging. The port
+> was AI-assisted. The 13 unit tests (still written in Java, run against the Kotlin code) are run by
+> CI. The Kotlin version has **not** been tested on real phones or USB hardware yet; only the earlier
+> Java version was.
 
 Use the real `adb` from Termux to control a second Android phone over a USB OTG cable, from a phone
 that is not rooted and has no computer nearby.
@@ -68,7 +70,8 @@ chmod +x gradlew   # the web upload did not keep the executable bit
 The APK ends up in `cli/build/outputs/apk/debug/`. The unit tests run a fake adb target over a local
 socket (no hardware). At the time of publishing they pass; one timing-sensitive test
 (`garbageBytesCloseSessionWithHexEvidence`) failed once on a slow single-core build machine and
-passed on re-run.
+passed on re-run. CI re-runs the test suite once if it fails, so a flaky
+failure shows up as a warning on the run; a real failure still fails the build.
 
 ## Honest notes
 
@@ -91,4 +94,3 @@ passed on re-run.
   the BSD 3-Clause license (`adblib/LICENSE`). Details and the one change made are in
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - Everything else is MIT licensed, see [LICENSE](LICENSE).
-
