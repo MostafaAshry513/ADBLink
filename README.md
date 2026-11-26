@@ -48,6 +48,9 @@ Notes:
 
 ## Build
 
+The short version is below; [BUILDING.md](BUILDING.md) has the full
+step-by-step guide, including troubleshooting.
+
 Needs JDK 17 and the Android SDK (platform 34). Then:
 
 ```
@@ -82,3 +85,4 @@ passed on re-run.
   the BSD 3-Clause license (`adblib/LICENSE`). Details and the one change made are in
   [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - Everything else is MIT licensed, see [LICENSE](LICENSE).
+

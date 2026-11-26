@@ -6,3 +6,10 @@
 build/
 captures/
 *.apk
+
+# Local keystore files - never commit signing keys
+*.keystore
+*.jks
+
+# Kotlin build artifacts
+.kotlin/
