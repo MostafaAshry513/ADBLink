@@ -52,7 +52,7 @@ class CliActivity : Activity() {
             setBackgroundColor(BG)
         }
 
-        root.addView(text("ADB-OTG Bridge", 22, TEXT, true))
+        root.addView(text("ADBLink", 22, TEXT, true))
         val sub = text(
             "Real adb for Termux, over your OTG cable  \u00B7  v" + CliService.VERSION,
             13, DIM, false
