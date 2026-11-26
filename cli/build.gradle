@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 34
@@ -18,6 +19,13 @@ android {
     sourceSets {
         // the Termux client script is the single source of truth, shipped as an asset
         main.assets.srcDirs += ['../termux']
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
     namespace 'com.htetznaing.adbotg.cli'
 }

@@ -2,7 +2,7 @@
 
 ## adblib (Cameron Gutman, BSD 3-Clause)
 
-`adblib/` contains `AdbMessage.java` and `AdbProtocol.java`, taken from AdbLib by Cameron Gutman
+`adblib/` contains `AdbMessage.kt` and `AdbProtocol.kt` (Kotlin ports on this branch of the original `AdbMessage.java` and `AdbProtocol.java`), taken from AdbLib by Cameron Gutman
 (https://github.com/cgutman/AdbLib), via the ADB-OTG project below. The license text is in
 `adblib/LICENSE`. Change from the copy this project started from: the
 `parseAdbMessage(AdbChannel)` method was removed from `AdbMessage` because it depended on a channel
