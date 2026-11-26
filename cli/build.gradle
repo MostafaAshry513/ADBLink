@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.htetznaing.adbotg.cli"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 7
+        versionName "3.4"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        // the Termux client script is the single source of truth, shipped as an asset
+        main.assets.srcDirs += ['../termux']
+    }
+    namespace 'com.htetznaing.adbotg.cli'
+}
+
+dependencies {
+    implementation project(':adblib')
+    testImplementation 'junit:junit:4.13.2'
+}
