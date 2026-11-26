@@ -15,8 +15,8 @@ target phone over USB OTG.
 1. Clone the repository:
 
    ```
-   git clone https://github.com/MostafaAshry513/adb-otg-termux.git
-   cd adb-otg-termux
+   git clone https://github.com/MostafaAshry513/ADBLink.git
+   cd ADBLink
    ```
 
 2. Point Gradle at your Android SDK (one of the two):
