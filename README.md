@@ -8,8 +8,8 @@
 
 > **Kotlin app.** The app code (`cli` and the bundled `adblib`) is a Kotlin port of the earlier Java
 > version, with the same behavior: USB relay to `127.0.0.1:6000`, same framing, same logging. The 13 unit tests (still written in Java, run against the Kotlin code) are run by
-> CI. The Kotlin version has **not** been tested on real phones or USB hardware yet; only the earlier
-> Java version was.
+> CI. The Kotlin version (v3.7) has since been tried by the author on a real phone over USB OTG and
+> works; the earlier Java version was tested on a pair of phones too. Other devices are untested.
 
 Use the real `adb` from Termux to control a second Android phone over a USB OTG cable, from a phone
 that is not rooted and has no computer nearby.
