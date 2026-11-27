@@ -7,8 +7,7 @@
 [![CI](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml/badge.svg)](https://github.com/MostafaAshry513/ADBLink/actions/workflows/ci.yml)
 
 > **Kotlin app.** The app code (`cli` and the bundled `adblib`) is a Kotlin port of the earlier Java
-> version, with the same behavior: USB relay to `127.0.0.1:6000`, same framing, same logging. The port
-> was AI-assisted. The 13 unit tests (still written in Java, run against the Kotlin code) are run by
+> version, with the same behavior: USB relay to `127.0.0.1:6000`, same framing, same logging. The 13 unit tests (still written in Java, run against the Kotlin code) are run by
 > CI. The Kotlin version has **not** been tested on real phones or USB hardware yet; only the earlier
 > Java version was.
 
@@ -79,9 +78,7 @@ failure shows up as a warning on the run; a real failure still fails the build.
 
 ## Honest notes
 
-- **AI-assisted.** This project was developed with an AI assistant doing most of the code writing,
-  with the author directing it, installing it on real phones and testing it. Read the code before you
-  trust it with a device you care about.
+- **Read the code.** Read the code before you trust it with a device you care about.
 - **Narrow testing.** Tested on one pair of phones. Other devices, Android versions, USB hubs and
   adapters may behave differently.
 - **Not a full adb replacement.** It relays whatever the Termux `adb` sends. If something fails, the

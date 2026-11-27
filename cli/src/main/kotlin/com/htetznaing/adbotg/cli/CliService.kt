@@ -291,7 +291,7 @@ class CliService : Service() {
         // this bridge as a second device (emulator-5554), so the two adb transports would keep
         // replacing each other on our single-client relay. 6000 is outside that range.
         const val PORT = 6000
-        const val VERSION = "3.4"
+        const val VERSION = "3.7"
 
         /** Read by the activity. */
         @Volatile

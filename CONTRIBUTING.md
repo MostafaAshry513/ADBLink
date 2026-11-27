@@ -27,10 +27,7 @@ much more useful with the exact command and the log lines around the failure.
 
 ## A note on how this project is built
 
-Most of the code was written by an AI assistant under the author's direction,
-with the author installing and testing on real phones. Contributions from
-humans and from AI-assisted workflows are both fine; what matters is that the
-submitter understands the change and has tested it as far as their hardware
-allows.
+Contributions are welcome. What matters is that the submitter understands the
+change and has tested it as far as their hardware allows.
 
 Everything you contribute is under the repository's MIT license.

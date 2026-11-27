@@ -72,7 +72,5 @@ with its SHA-256 in the release notes.
 
 ## Honest notes
 
-This project was developed with an AI assistant doing most of the code writing,
-directed and hardware-tested by the author. Read the code before trusting it
-with a device you care about, and expect untested behavior on device pairs
-other than the author's.
+Read the code before trusting it with a device you care about, and expect
+untested behavior on device pairs other than the author's.
