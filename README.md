@@ -29,11 +29,6 @@ Termux (adb client)  <-- TCP 127.0.0.1:6000 -->  this app  <-- USB OTG -->  targ
 
 [![ADBLink demo](docs/demo-preview.gif)](docs/demo.mp4)
 
-The animation above is the first part of the demo. Click it to open the full 1 minute video with sound ([docs/demo.mp4](docs/demo.mp4)). It shows `adb connect`,
-`devices`, `shell`, `push`, `install` and `logcat` going through the relay. The adb output is from a real
-`adb` client talking to the real relay code. The target in the recording is a software adbd, not a
-real phone, and the phone screens are drawn, not captured.
-
 ## Requirements
 
 - Host phone: Android 5.0+ with USB host (OTG) support, Termux installed, no root needed.
